@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track your order</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.5 -apple-system, "Segoe UI", Arial, sans-serif; background: #f4f6f8; color: #1f2933; }
+    .page { max-width: 720px; margin: 32px auto; padding: 0 16px; }
+    .lookup { display: flex; gap: 8px; } .lookup input { flex: 1; padding: 10px; border: 1px solid #cbd2d9; border-radius: 6px; font: inherit; }
+    button { padding: 10px 18px; border: 0; border-radius: 6px; background: #1f2933; color: #fff; font: inherit; cursor: pointer; }
+    .order { background: #fff; border-radius: 10px; padding: 20px; margin-top: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+    .headline h2 { margin: 0; } .headline.success h2 { color: #0e7c66; } .headline.warning h2 { color: #b44d12; }
+    .muted { color: #7b8794; font-size: 13px; } .error { color: #c62828; }
+    .progress { display: flex; list-style: none; padding: 0; margin: 18px 0; }
+    .progress li { flex: 1; text-align: center; padding-top: 14px; border-top: 4px solid #e4e7eb; font-size: 13px; color: #9aa5b1; }
+    .progress li.done { border-color: #0e7c66; color: #1f2933; font-weight: 600; }
+    .group { border-top: 1px solid #eee; padding-top: 10px; margin-top: 10px; } .group h3 { font-size: 15px; margin: 0 0 6px; }
+    .group ul { list-style: none; padding: 0; margin: 0; } .group li { display: flex; justify-content: space-between; padding: 4px 0; }
+    .chip { font-size: 12px; padding: 1px 8px; border-radius: 10px; background: #e4e7eb; }
+    .chip.delivered, .chip.picked_up { background: #c6f7e2; } .chip.delivery_exception { background: #ffe3e3; } .chip.ready_for_pickup { background: #fff3c4; }
+    .timeline { list-style: none; padding: 0; } .timeline li { padding: 4px 0; border-left: 2px solid #e4e7eb; padding-left: 10px; }
+    .timeline time { color: #7b8794; font-size: 12px; margin-right: 6px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="/build/bundle.js"></script>
+</body>
+</html>
